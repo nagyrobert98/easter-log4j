@@ -1,0 +1,21 @@
+1 - FATAL {main} -> Itt a húsvét, eljött végre,
+1 - ERROR {main} -> A szép lányok örömére.
+1 - WARN  {main} -> Mert a lányok szép virágok,
+1 - INFO  {main} -> Illatos víz illik rájok.
+1 - FATAL {main} -> Kit húsvétkor nem locsolnak,
+1 - ERROR {main} -> Hervadt virág lesz már holnap.
+1 - INFO  {main} -> Locsolásért puszid várom!
+2 - FATAL {main} -> Itt a húsvét, eljött végre,
+2 - ERROR {main} -> A szép lányok örömére.
+2 - WARN  {main} -> Mert a lányok szép virágok,
+2 - INFO  {main} -> Illatos víz illik rájok.
+2 - FATAL {main} -> Kit húsvétkor nem locsolnak,
+2 - ERROR {main} -> Hervadt virág lesz már holnap.
+2 - INFO  {main} -> Locsolásért puszid várom!
+3 - FATAL {main} -> Itt a húsvét, eljött végre,
+3 - ERROR {main} -> A szép lányok örömére.
+3 - WARN  {main} -> Mert a lányok szép virágok,
+3 - INFO  {main} -> Illatos víz illik rájok.
+3 - FATAL {main} -> Kit húsvétkor nem locsolnak,
+3 - ERROR {main} -> Hervadt virág lesz már holnap.
+3 - INFO  {main} -> Locsolásért puszid várom!

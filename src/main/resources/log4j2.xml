@@ -1,0 +1,41 @@
+<Configuration status="debug">
+    <Properties>
+        <Property name="LOG_PATTERN">%X{it} - %-5p {%t} -> %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <File name="File1" fileName="kerdes.log" append="false">
+            <MarkerFilter marker ="kerdes" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+        <File name="File2" fileName="allapot.log" append="false">
+            <MarkerFilter marker ="allapot" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+        <File name="File3" fileName="nemjelolt.log" append="false">
+            <NoMarkerFilter onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+        <File name="File4" fileName="Győrfi_Pál.log" append="false">
+            <TimeFilter start="20:00:00" end="5:00:00" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File1"/>
+            <AppenderRef ref="File2"/>
+            <AppenderRef ref="File3"/>
+            <AppenderRef ref="File4"/>
+        </Root>
+<!-->
+        <Logger name="pkg.Main" additivity="true">
+            <AppenderRef ref="Console"/>
+        </Logger>
+<!-->
+    </Loggers>
+</Configuration>
